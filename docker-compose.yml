@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+
+  hermit:
+    # environment:
+    #   - GOOS=darwin
+    image: golang
+    volumes: 
+      - .:/go/src/app
+    working_dir: /go/src/app
