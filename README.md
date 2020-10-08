@@ -19,5 +19,5 @@ This means, of course, that if you want to work on this repo locally you need to
 `docker-compose run hermit go build -o ./bin/hermit`
   - builds a linux binary
 
-`GOOS=darwin docker-compose run hermit go build -o ./bin/hermit` 
+`docker-compose run -e GOOS=darwin hermit go build -o ./bin/hermit` 
   - builds a Mac binary
